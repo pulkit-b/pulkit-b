@@ -1,0 +1,47 @@
+.about-component{
+    min-height: 500px;
+    margin-left: 20px;  
+    .section {
+        display: flex;
+        .title { 
+            h5{
+                font-size: 55px;
+                text-transform: uppercase;
+                margin: 0;
+                border-bottom: 4px solid;
+                width: fit-content;
+                line-height: 60px; 
+                white-space: nowrap;
+            }
+            .sub-heading1{
+                border : 0;
+            }
+            .sub-heading2{
+                border : 0;
+                margin-left: 70px;
+            }
+        }
+        .content-section { 
+            margin : 0 50px;
+            .list{
+                display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+                span{
+                    flex-basis: 33.33%;
+                    margin-top: 40px;
+                    font-size: 20px;    
+                }
+            }
+            p{
+                text-align: justify;
+    line-height: 30px;
+    font-size: 14px;
+
+            }
+        }
+
+
+        }
+        
+}

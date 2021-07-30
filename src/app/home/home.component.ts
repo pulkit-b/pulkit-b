@@ -6,14 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+  public activeMenu = "home";
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  alertMyName(name){
-    name = 'Aditi';
-    alert(name);
+  changeMenu(type){
+    this.activeMenu = type;
+
   }
+
 }

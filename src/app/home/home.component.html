@@ -1,4 +1,5 @@
 <div class="home-component">
+    <div class="top-section">
     <div class="background-circle">
         <div class="circle-1"></div>
         <div class="circle-2"></div>
@@ -7,9 +8,9 @@
     <div class="header">
         <div class="menu-options">
             <ul>
-                <li>Home</li>
-                <li>About Me</li>
-                <li>Contact</li>
+                <li [ngClass]="activeMenu==='home' ? 'active' : ''" (click)="changeMenu('home')">Home</li>
+                <li [ngClass]="activeMenu==='about' ? 'active' : ''" (click)="changeMenu('about')">About Me</li>
+                <li [ngClass]="activeMenu==='contact' ? 'active' : ''" (click)="changeMenu('contact')">Contact</li>
             </ul>
         </div>    
     </div>
@@ -18,8 +19,10 @@
         <div class="envelope"><i class="far fa-envelope"></i></div>
     </div>
     <div class="profile-title">
-        <p>Pulkit Batheja</p>
+        <p>Aditi Singh</p>
         <p>Solution Designer</p>
         <p>Fullstack developer</p>
     </div>
+</div>
+    <app-about></app-about>
 </div>
